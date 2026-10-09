@@ -37,47 +37,6 @@ In the ideal case, the wheel shaft turns at about 23.5% of motor speed and produ
 
 **Engineering interpretation:** Frame deformation, mounting-hole wear, damaged gear teeth, and misalignment could contribute to different rolling resistance on each side. These are possible causes, not isolated or experimentally proven root causes. The main lesson was that motor power alone did not ensure reliability; alignment, frame stiffness, impact resistance, and serviceability also mattered.
 
-### P, PD, and PID Tuning (Illustrative Code)
-
-The following C++ example explores **possible feedback-based steering correction**. It is **not a claim that this code ran on the competition robot**. A heading sensor (such as an IMU) or encoder-based speed feedback is needed to measure error. Feedback cannot fix a mechanically damaged drivetrain.
-
-- **P:** responds to present error; large gain can cause oscillation.
-- **PD:** adds derivative action to damp rapid corrections.
-- **PID:** adds integral action to reduce persistent offset, with a clamp to limit integral windup.
-
-```cpp
-#include <algorithm>
-
-struct PIDController {
-    float kp = 0.0f, ki = 0.0f, kd = 0.0f;
-    float integral = 0.0f, previousError = 0.0f;
-    float integralLimit = 100.0f;
-
-    // error = target - measured value; dt is in seconds.
-    float update(float error, float dt) {
-        if (dt <= 0.0f) return 0.0f;
-        integral = std::clamp(integral + error * dt,
-                              -integralLimit, integralLimit);
-        float derivative = (error - previousError) / dt;
-        previousError = error;
-        return kp * error + ki * integral + kd * derivative;
-    }
-
-    void reset() { integral = 0.0f; previousError = 0.0f; }
-};
-
-// P:   kp > 0; ki = 0; kd = 0
-// PD:  kp > 0; ki = 0; kd > 0
-// PID: kp > 0; ki > 0; kd > 0
-//
-// Steering example (signs depend on actual wiring):
-// float correction = controller.update(targetHeading - heading, dt);
-// float left  = std::clamp(baseSpeed - correction, -1.0f, 1.0f);
-// float right = std::clamp(baseSpeed + correction, -1.0f, 1.0f);
-```
-
-**Suggested tuning order:** Start with P control and increase `kp` gradually. Add `kd` if response overshoots or oscillates. Only add `ki` for persistent steady-state error. Test on a mechanically sound robot; gains, sensor units, and command limits must be adapted to the real hardware.
-
 ### Power Delivery
 
 The drive motors could draw high current during acceleration and near-stall conditions, so battery wiring and connections needed to handle peak loads reliably. This made soldering quality, wire sizing, and connection integrity important parts of the build.
