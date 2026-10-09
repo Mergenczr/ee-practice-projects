@@ -51,7 +51,10 @@ class Calculator {
 
         if (operatorIndex == -1) {
             System.out.println("Invalid input! No valid operator found.");
+            scanner.close();
             return;
+            
+            
         }
 
         try {
