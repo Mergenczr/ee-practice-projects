@@ -1,15 +1,17 @@
 # Academic & Practice Code Portfolio
 
-A collection of foundational programming projects and practice scripts.
+A collection of foundational programming projects and practice exercises in C++, Java, and assembly, with links to my robotics build documentation.
 
 ---
 
 ##  C++ Memory Matching Game
 
-An object-oriented terminal game implementing custom state logic, dynamic grid scaling, theme selection, and configurable game loop delays.
+An object-oriented terminal memory matching game with selectable grid sizes, themes, and display delays.
+
+[View source code](CardGuessingGame.cpp)
 
 ### Gameplay Demo
-[![C++ Memory Matching Game Gameplay](img/terminalDemos/Picture1.jpg#thumbnail)](img/terminalDemos/Picture1.jpg)
+![C++ Memory Matching Game Gameplay](img/terminalDemos/Picture1.jpg)
 
 ### Core Features
 * **Dynamic Grid Sizing:** Supports Easy (4x4), Moderate (6x6), and Difficult (8x8) matrix configurations.
@@ -20,20 +22,37 @@ An object-oriented terminal game implementing custom state logic, dynamic grid s
 
 ##  Java Calculator
 
-A Java-based arithmetic calculator application demonstrating basic OOP principles and UI/console interaction.
+A Java console calculator that separates arithmetic methods from input handling. Supports addition, subtraction, multiplication, division, and integer exponentiation.
 
-* Located in: `/java-calculator`
-
----
-
-## 🧪 Practice & Test Scripts
-
-A collection of introductory scripts, syntax exercises, and environment test builds.
-
-
+[View source code](Mymath.java)
 
 ---
 
-## 🛠️ Build & Execution
+## Assembly Bubble Sort
 
-### Compile C++ Memory Game
+An x86-64 assembly program that sorts 12 integers and prints the original and sorted lists. Uses nested loops, conditional jumps, register-based parameter passing, and calls to `printf`.
+
+[View source code](BubbleSort.S)
+
+---
+
+## Robotics Build Documentation
+
+[3 kg Contact Impact Football Robot — write-up and build photos](img/combatRobot/3kg/ReadMe)
+
+---
+
+## Practice & Learning Archive
+
+The [practice folder](practice/) preserves smaller exercises and files uploaded from my Mac as a record of my learning. These are practice materials rather than finished portfolio projects.
+
+| Area | Files |
+| --- | --- |
+| C++ practice | [C++ exercises](practice/C%2B%2B/) |
+| Java practice | [Java exercises](practice/Java/), [BookReader.java](practice/BookReader.java) |
+| Assembly practice | [Assembly exercises](practice/Assembly/), [factorial.s](practice/factorial.s) |
+| Other practice | [Calculator](practice/Calculator) |
+
+### Archived Mac / Xcode Project Files
+
+The [MinHeap](practice/MinHeap.xcodeproj/) and [Queue](practice/Queue.xcodeproj/) folders contain Xcode project settings and workspace files copied from my Mac. Their corresponding implementation source files are not currently included in this repository.
