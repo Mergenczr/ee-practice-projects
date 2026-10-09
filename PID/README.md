@@ -46,7 +46,5 @@ The sketch is preserved as provided, including the sensor initialization, distan
 
 ## Technical Notes
 
-- The derivative and integral use a fixed 0.05 s interval, while the actual loop period can vary due to sensor readings and processing. A measured elapsed time would improve precision.
-- The integral clamp reduces windup but does not provide full output-saturation anti-windup.
-- Only status 4 is excluded; other invalid sensor status codes may need handling.
 - The servo angle is constrained for mechanical safety. Sensor and hardware compatibility must be verified before running.
+- The sensor's use 3.3v only extended amount of 5v will burn the sensor. During initial testing, I connected the VL53L0X sensor module to a 5 V supply, which resulted in permanent damage to the sensor. Fortunately, I had a replacement available and continued the experiment using 3.3 V. This experience taught me the importance of checking component voltage requirements and verifying the power supply before connecting hardware. Although some VL53L0X breakout boards support 5 V through onboard voltage regulation, the module I used did not tolerate the connection.
