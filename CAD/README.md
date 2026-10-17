@@ -1,52 +1,55 @@
 # CAD Modeling & Engineering Drawing Practice
 
-A collection of CAD models, sketches, and technical drawings created while learning **Onshape** and **SOLIDWORKS**. These include university coursework and independent practice, rather than production-ready designs.
+A gallery of **Onshape** and **SOLIDWORKS** practice from university coursework and independent learning. These exercises focus on 3D modeling, sketch geometry, dimensioning, and reading and creating engineering drawings; they are not presented as production-ready parts.
 
-## 3D models and engineering drawings
+## CAD practice gallery
 
-### Clevis-style mounting bracket
+### 1. Solid-modeling exercise
 
-Practice modeling a forked mounting bracket and documenting it with orthographic views, dimensions and an isometric drawing.
+![Solid-modeling exercise](../img/Screenshot%202026-10-16%20224937.png)
 
-![Clevis bracket model](images/clevis-bracket-model.jpg)
+### 2. Onshape mounting bracket — dimensioned drawing
 
-![Detailed bracket drawing](images/clevis-bracket-drawing-detail.jpg)
+![Onshape mounting bracket — dimensioned drawing](../img/Screenshot%202026-10-16%20225351.png)
 
-![Bracket drawing in inches](images/clevis-bracket-drawing-inches.jpg)
+### 3. Onshape stepped-profile drawing
 
-![Bracket drawing in metric units](images/clevis-bracket-drawing-metric.jpg)
+![Onshape stepped-profile drawing](../img/Screenshot%202026-10-16%20225510.png)
 
-### Stepped profile drawing
+### 4. CAD practice screenshot
 
-An Onshape drawing exercise with stepped geometry and angled edges.
+![CAD practice screenshot](../img/Screenshot%202026-10-16%20230441.png)
 
-![Stepped profile drawing](images/stepped-profile-onshape-drawing.jpg)
+### 5. Mounting bracket — additional drawing
 
-### Solid-modeling practice
+![Mounting bracket — additional drawing](../img/Screenshot%202026-10-16%20230822.png)
 
-Another 3D modeling exercise.
+### 6. Geometric sketching exercise
 
-![3D model practice](images/solid-model-practice-red.jpg)
+![Geometric sketching exercise](../img/Screenshot%202026-10-16%20230847.png)
 
-## Sketching and geometry practice
+### 7. Geometric construction exercise
 
-Exercises exploring symmetric profiles, circles and tangent geometry.
+![Geometric construction exercise](../img/Screenshot%202026-10-16%20230851.png)
 
-![Symmetric profile sketch](images/symmetric-profile-sketch.jpg)
+### 8. Additional sketching exercise
 
-![Tangent circles sketch](images/tangent-circles-sketch.jpg)
+![Additional sketching exercise](../img/Screenshot%202026-10-16%20230859.png)
 
-![Concentric ring drawing](images/concentric-ring-drawing.jpg)
+### 9. Concentric ring drawing
 
-## Learning goals
+![Concentric ring drawing](../img/Screenshot%202026-10-16%20232114.png)
 
-- Practice parametric sketching and part modeling.
-- Learn dimensioning, orthographic and isometric views, and engineering drawings.
-- Improve geometric construction and technical drawing interpretation.
-- Build familiarity with Onshape and SOLIDWORKS.
+## What I am practicing
+
+- 2D sketches, geometric constraints, circles, symmetry and tangencies
+- 3D part modeling and geometric features
+- Orthographic and isometric engineering drawing views
+- Dimensions and technical documentation
+- Becoming more comfortable with Onshape and SOLIDWORKS
 
 ## Files
 
-Images are stored in `CAD/images/`. STEP models and PDF drawings can be added as they become available.
+The screenshots are in the repository's existing [`img/` folder](../img/). I may add STEP models and PDF drawings as practice continues.
 
-> These are educational practice exercises, not validated manufacturing designs.
+> These are learning exercises from coursework and personal practice, not validated manufacturing designs.
