@@ -41,7 +41,7 @@ These are parameter configurations for comparison, **not claimed measurements or
 ## Code
 ## Project Demo
 
-<video src="./59771b12-02f0-4e41-9cdb-c5e608d25b4b.mp4" controls width="700"></video>
+[▶ Watch Demo](59771b12-02f0-4e41-9cdb-c5e608d25b4b.mp4)
 
 [**View the original Arduino sketch**](PID_Distance_Control.ino)
 
