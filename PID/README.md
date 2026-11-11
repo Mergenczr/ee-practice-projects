@@ -1,7 +1,5 @@
 
 
-https://github.com/user-attachments/assets/0140dc0b-479f-4cae-8add-b6a1adaf7420
-
 # PID Distance Control Experiment
 
 A standalone Arduino experiment exploring **P, PD, and PID control** with distance feedback. This project is **unrelated to the 3 kg robofootball robot**.
@@ -47,7 +45,7 @@ These are parameter configurations for comparison, **not claimed measurements or
 ## PID Controller Demo
 https://github.com/user-attachments/assets/0140dc0b-479f-4cae-8add-b6a1adaf7420
 
-[▶ Watch 10-Second Demo](./59771b12-02f0-4e41-9cdb-c5e608d25b4b.mp4)
+
 
 [**View the original Arduino sketch**](PID_Distance_Control.ino)
 
